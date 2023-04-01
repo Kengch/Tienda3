@@ -5,6 +5,7 @@
 package com.tienda2.repository;
 
 import com.tienda2.entity.Pais;
+import com.tienda2.entity.Persona;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
@@ -14,5 +15,5 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface PersonaRepository extends CrudRepository<Pais, Long>{
-    
+    Persona findByNombre (String nombre);
 }
